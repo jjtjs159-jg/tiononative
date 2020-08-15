@@ -1,0 +1,12 @@
+{
+  "name": "tiononative",
+  "displayName": "tiononative",
+  "expo": {
+    "name": "tiononative",
+    "slug": "tiononative",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

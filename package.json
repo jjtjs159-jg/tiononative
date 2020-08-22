@@ -8,6 +8,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "babel-plugin-auto-import": "^1.1.0",
     "expo": "~38.0.9",
     "expo-cli": "^3.24.0",
     "expo-splash-screen": "^0.5.0",

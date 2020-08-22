@@ -17,16 +17,27 @@
     "react-dom": "~16.11.0",
     "react-native": "~0.62.2",
     "react-native-gesture-handler": "~1.6.1",
+    "react-native-keyboard-aware-scroll-view": "^0.9.2",
     "react-native-reanimated": "~1.9.0",
     "react-native-screens": "~2.9.0",
+    "react-native-typescript-transformer": "^1.2.13",
     "react-native-unimodules": "~0.10.1",
     "react-native-web": "~0.11.7"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
+    "@types/expo": "^33.0.1",
+    "@types/jest": "^26.0.10",
+    "@types/react": "^16.9.46",
+    "@types/react-native": "^0.63.8",
+    "@types/react-test-renderer": "^16.9.3",
     "babel-jest": "~25.2.6",
+    "babel-plugin-react-native-classname-to-style": "^1.2.2",
+    "babel-plugin-react-native-platform-specific-extensions": "^1.1.1",
     "jest": "~25.2.6",
-    "react-test-renderer": "~16.11.0"
+    "react-native-sass-transformer": "^1.4.0",
+    "react-test-renderer": "~16.11.0",
+    "typescript": "^4.0.2"
   },
   "jest": {
     "preset": "react-native"

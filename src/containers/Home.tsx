@@ -21,10 +21,7 @@ const Home: FunctionComponent = () => {
                         header: (props) => <BrandedHeader {...props} />
                     }}
                 />
-                <Screen
-                    name="Sign"
-                    component={Sign}
-                />
+                <Screen name="Sign" component={Sign} />
             </Navigator>
             <StatusBar style="auto" />
         </NavigationContainer>

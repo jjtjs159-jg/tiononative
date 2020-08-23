@@ -1,2 +1,2 @@
 # tiononative
-React Native 공부를 위한 
+React Native 공부를 위한 프로젝트

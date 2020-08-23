@@ -1,14 +1,30 @@
-import { Text, View } from 'react-native';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import { StatusBar } from 'expo-status-bar';
-import styles from './Home.style';
+import 'react-native-gesture-handler';
+import Main from './Main/Index';
+import Sign from './Sign/Index';
 
-const Home = () => {
+const Stack = createStackNavigator();
+const { Screen, Navigator } = Stack;
+
+const Home: FunctionComponent = () => {
     return (
-        <View style={styles.container}>
-            <Text style={styles.text}>Open up App.js to start working on your app!</Text>
+        <NavigationContainer>
+            <Navigator>
+                <Screen
+                    name="Main"
+                    component={Main}
+                    // options={{ title: 'Welcome' }}
+                />
+                <Screen
+                    name="Sign"
+                    component={Sign}
+                />
+            </Navigator>
             <StatusBar style="auto" />
-        </View>
+        </NavigationContainer>
     );
 }
 

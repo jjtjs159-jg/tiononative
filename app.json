@@ -7,6 +7,10 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "icon": "icon.png",
+    "android": {
+      "package": "com.yourcompany.yourname"
+    }
   }
 }

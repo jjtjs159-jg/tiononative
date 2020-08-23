@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { StatusBar } from 'expo-status-bar';
+import { BrandedHeader } from 'components/headers';
 import 'react-native-gesture-handler';
 import Main from './Main/Index';
 import Sign from './Sign/Index';
@@ -16,7 +17,9 @@ const Home: FunctionComponent = () => {
                 <Screen
                     name="Main"
                     component={Main}
-                    // options={{ title: 'Welcome' }}
+                    options={{
+                        header: (props) => <BrandedHeader {...props} />
+                    }}
                 />
                 <Screen
                     name="Sign"

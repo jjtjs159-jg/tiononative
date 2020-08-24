@@ -5,7 +5,7 @@ import {
     Text,
     View,
 } from 'react-native';
-import styles from './Index.style';
+import styles from './index.style';
 
 type Props = StackScreenProps<any, any>;
 

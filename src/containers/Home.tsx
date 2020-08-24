@@ -4,8 +4,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { StatusBar } from 'expo-status-bar';
 import { BrandedHeader } from 'components/headers';
 import 'react-native-gesture-handler';
-import Main from './Main/Index';
-import Sign from './Sign/Index';
+import Main from './Main/index';
+import Sign from './Sign/index';
 
 const Stack = createStackNavigator();
 const { Screen, Navigator } = Stack;

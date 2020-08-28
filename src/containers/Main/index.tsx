@@ -21,15 +21,12 @@ const Index: FunctionComponent<Props> = ({
 
         navigation.navigate(to, params);
     }
+
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>
-                메인
-            </Text>
-            <Button
-                title="버튼"
-                onPress={handlePress}
-            />
+            <View style={styles.item1} />
+            <View style={styles.item2} />
+            <View style={styles.item3} />
         </View>
     );
 }

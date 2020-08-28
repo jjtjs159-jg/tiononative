@@ -9,7 +9,8 @@ const styles = StyleSheet.create({
         // paddingRight: 25,
         paddingLeft: '5%',
         paddingRight: '5%',
-        backgroundColor: '#ffeed4',
+        // backgroundColor: '#ff8900',
+        backgroundColor: 'white',
     },
     inner: {
         flex: 1,
@@ -18,13 +19,13 @@ const styles = StyleSheet.create({
     },
     iconLeft: {
         // marginRight: 25,
-        color: '#ff8900',
+        color: 'black',
         flexDirection: 'row',
         marginRight: 'auto',
         width: '10%',
     },
     iconRight: {
-        color: '#ff8900',
+        color: 'black',
         flexDirection: 'row',
         marginLeft: 'auto',
         width: '10%',

@@ -1,6 +1,10 @@
 import React, { FunctionComponent } from 'react';
 import { StackHeaderProps } from '@react-navigation/stack';
 import { Text, View } from 'react-native';
+// import { Ionicons, Entypo } from '@expo/vector-icons';
+import { SimpleLineIcons } from '@expo/vector-icons'; 
+import { Octicons } from '@expo/vector-icons'; 
+import styles from './BrandedHeader.style';
 
 type Props = StackHeaderProps;
 
@@ -9,19 +13,16 @@ const BrandedHeader: FunctionComponent<Props> = ({
 }) => {
 
     return (
-        <View
-            style={{
-                height: 80,
-                paddingTop: 10,
-                paddingBottom: 10,
-                paddingLeft: 25,
-                paddingRight: 25, 
-                backgroundColor: '#AA1F1F'
-            }}
-        >
-            <Text>
-                Marcal
-            </Text>
+        <View style={styles.header}>
+            <View style={styles.inner}>
+                {/* <Ionicons style={styles.iconLeft} name="md-menu" size={24} /> */}
+                <SimpleLineIcons style={styles.iconLeft} name="menu" size={24} />
+                <Text>
+                    Marcal
+                </Text>
+                {/* <Entypo style={styles.iconRight} name="magnifying-glass" size={24} /> */}
+                <Octicons style={styles.iconRight} name="search" size={24} color="black" />
+            </View>
         </View>
     );
 }

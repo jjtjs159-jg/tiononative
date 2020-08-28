@@ -22,8 +22,11 @@ const Home: FunctionComponent = () => {
                         <Screen
                             name="Main"
                             component={Main}
+                            // options={{
+                            //     header: (props) => <BrandedHeader {...props} />
+                            // }}
                             options={{
-                                header: (props) => <BrandedHeader {...props} />
+                                headerShown: false,
                             }}
                         />
                         <Screen name="Sign" component={Sign} />

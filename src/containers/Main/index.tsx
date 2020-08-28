@@ -25,8 +25,28 @@ const Index: FunctionComponent<Props> = ({
     return (
         <View style={styles.container}>
             <View style={styles.item1} />
-            <View style={styles.item2} />
-            <View style={styles.item3} />
+            <View style={styles.item2}>
+                <Text style={styles.headline}>
+                    Marcal
+                </Text>
+            </View>
+            <View style={styles.item3}>
+                <Text style={styles.title}>
+                    Frontend Projects
+                </Text>
+                <Text>
+                    Let's start your frontend projects with us
+                </Text>
+            </View>
+            <View style={styles.item4}>
+                <View style={styles.item5}>
+                    <Button
+                        color="#ff8a00"
+                        title="Let's Start"
+                        onPress={handlePress}
+                    />
+                </View>
+            </View>
         </View>
     );
 }

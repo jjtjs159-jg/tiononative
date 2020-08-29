@@ -1,46 +1,50 @@
 import { StyleSheet } from 'react-native';
 
-// #ff8a00
-
 const styles = StyleSheet.create({
-    container: {
+    view: {
         flex: 1,
     },
-    item1: {
-        flex: 0.5,
+    blank: {
+        flex: 0.3,
         backgroundColor: 'white',
     },
+    headlineArea: {
+        flex: 1,
+        backgroundColor: 'white',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
     headline: {
-        fontWeight: '500',
-        color: 'white',
+        fontWeight: '700',
+        color: 'black',
         fontSize: 25,
     },
-    item2: {
+    visual: {
         flex: 4,
-        backgroundColor: '#ff8a00',
+        backgroundColor: 'white',
         alignItems: 'center',
-        paddingTop: 35,
     },
-    item3: {
+    introArea: {
         flex: 1,
         backgroundColor: 'white',
         alignItems: 'center',
         paddingTop: 30,
     },
-    item4: {
+    title: {
+        fontWeight: '700',
+        fontSize: 25,
+    },
+    content: {
+        fontSize: 15,
+    },
+    buttonArea: {
         flex: 1,
         backgroundColor: 'white',
         alignItems: 'center',
     },
-
-    item5: {
+    buttonWrap: {
         width: '50%',
     },
-
-    title: {
-        fontWeight: '700',
-        fontSize: 25
-    }
 });
 
 export default styles;

@@ -11,6 +11,17 @@
     "icon": "icon.png",
     "android": {
       "package": "com.yourcompany.yourname"
+    },
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": [
+        "js",
+        "jsx",
+        "svg",
+        "svgx",
+        "ts",
+        "tsx"
+      ]
     }
   }
 }

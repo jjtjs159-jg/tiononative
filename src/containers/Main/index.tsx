@@ -5,6 +5,8 @@ import {
     Text,
     View,
 } from 'react-native';
+import Colors from 'constants/Colors';
+import MainSVG from './main.svg';
 import styles from './index.style';
 
 type Props = StackScreenProps<any, any>;
@@ -23,25 +25,28 @@ const Index: FunctionComponent<Props> = ({
     }
 
     return (
-        <View style={styles.container}>
-            <View style={styles.item1} />
-            <View style={styles.item2}>
+        <View style={styles.view}>
+            <View style={styles.blank} />
+            <View style={styles.headlineArea}>
                 <Text style={styles.headline}>
                     Marcal
                 </Text>
             </View>
-            <View style={styles.item3}>
+            <View style={styles.visual}>
+                <MainSVG />
+            </View>
+            <View style={styles.introArea}>
                 <Text style={styles.title}>
                     Frontend Projects
                 </Text>
-                <Text>
+                <Text style={styles.content}>
                     Let's start your frontend projects with us
                 </Text>
             </View>
-            <View style={styles.item4}>
-                <View style={styles.item5}>
+            <View style={styles.buttonArea}>
+                <View style={styles.buttonWrap}>
                     <Button
-                        color="#ff8a00"
+                        color={Colors.$colorOrange}
                         title="Let's Start"
                         onPress={handlePress}
                     />

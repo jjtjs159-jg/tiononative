@@ -17,7 +17,10 @@ module.exports = function (api) {
                     ],
                     "root": ["."],
                     "alias": {
-                        "components": "./src/components"
+                        "components": "./src/components",
+                        "containers": "./src/containers",
+                        "types": "./src/types",
+                        "constants": "./src/constants",
                     }
                 }
             ]

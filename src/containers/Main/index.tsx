@@ -16,7 +16,7 @@ const Index: FunctionComponent<Props> = ({
     route,
 }) => {
     const handlePress = () => {
-        const to = 'Sign';
+        const to = 'Dashboard';
         const params = {
             name: 'jg'
         };
@@ -46,7 +46,7 @@ const Index: FunctionComponent<Props> = ({
             <View style={styles.buttonArea}>
                 <View style={styles.buttonWrap}>
                     <Button
-                        color={Colors.$colorBlueTint}
+                        color={Colors.$colorBlue}
                         title="Let's Start"
                         onPress={handlePress}
                     />

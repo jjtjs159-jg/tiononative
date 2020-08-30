@@ -46,11 +46,14 @@ const Index: FunctionComponent<Props> = ({
             <View style={styles.buttonArea}>
                 <View style={styles.buttonWrap}>
                     <Button
-                        color={Colors.$colorOrange}
+                        color={Colors.$colorBlueTint}
                         title="Let's Start"
                         onPress={handlePress}
                     />
                 </View>
+                <Text style={styles.textSmall}>
+                    Already a member
+                </Text>
             </View>
         </View>
     );

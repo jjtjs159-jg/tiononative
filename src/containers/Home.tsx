@@ -6,7 +6,7 @@ import { BrandedHeader } from 'components/headers';
 import { SafeAreaView, View } from 'react-native';
 import 'react-native-gesture-handler';
 import Main from './Main/index';
-import Sign from './Sign/index';
+import Dashboard from './Dashboard/index';
 
 const Stack = createStackNavigator();
 const { Screen, Navigator } = Stack;
@@ -29,7 +29,11 @@ const Home: FunctionComponent = () => {
                                 headerShown: false,
                             }}
                         />
-                        <Screen name="Sign" component={Sign} />
+                        <Screen name="Dashboard" component={Dashboard}
+                            // options={{
+                            //     headerShown: false,
+                            // }}
+                        />
                         {/* <StatusBar style="auto" /> */}
                     </Navigator>
                 </NavigationContainer>

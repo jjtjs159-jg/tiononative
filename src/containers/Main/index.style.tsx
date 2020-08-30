@@ -44,7 +44,11 @@ const styles = StyleSheet.create({
     },
     buttonWrap: {
         width: '50%',
+        marginBottom: '2%'
     },
+    textSmall: {
+        textAlign: 'center',
+    }
 });
 
 export default styles;
